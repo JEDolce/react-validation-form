@@ -1,0 +1,34 @@
+.formInput {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 280px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 12px;
+    color: gray;
+}
+
+span {
+    color: red;
+    font-size: 12px;
+    padding: 5px;
+    display: none;
+}
+
+/* Si el input es invalido, que muestre el span*/
+input:invalid~span {
+    display: block;
+}
+
+input:invalid[focus="true"] {
+    border: 2px solid red;
+}
